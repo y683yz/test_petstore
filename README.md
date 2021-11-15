@@ -19,7 +19,7 @@ There are many options and high level libraries can be used. For this task these
 - Setup environment: python, selenium, robot-framework with the newest versions. Refer to the python requirements.txt file in the root, also chrome and chromedriver should be installed.
 - Run the tests from terminal:
 ## Syntax 
-Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode to [default] to launch the browser:
+Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode from [headless] to [default] to launch the browser:
 >- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
 # Test report
 - Test report is a normal robot report, say report.html in the root, with TRACE/DEBUG/INFO log level.
