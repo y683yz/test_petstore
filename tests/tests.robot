@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Suite description
+Documentation    Suite description: Testing petStore API and UI
 Resource            ../settings/initial_settings.robot
 Suite Setup         Suite preparation
 Test Setup          None
@@ -37,3 +37,5 @@ Login perstore
     log in petstore by api
     Wait Until Keyword Succeeds     10 x    1 s   find a user by username by api
 
+Try to find an unexisted pet
+    Find a pet by unexisted id by api
