@@ -17,6 +17,8 @@ Find account by username
 
 Create a pet by API
     create a new pet by api
+    Create a new pet with missing photoUrls field by api
+    Create a new pet with only few important fields by api
 
 Create a pet by Selenium
     create a new pet by selenium

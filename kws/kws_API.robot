@@ -26,6 +26,18 @@ Create a new pet by api
     Should be equal as Strings       ${status.json()['name']}      ${newt.name}
     Should be equal as Strings       ${status.headers['content-type']}       application/json
 
+Create a new pet with missing photoUrls field by api
+    ${status}=      Send post Request   ${add_pet_url}      ${newt_x}
+    Should be equal as Integers      ${status.status_code}   200    ${status.text}
+    Should be equal as Strings       ${status.json()['name']}      ${newt_x.name}
+    Should be equal as Strings       ${status.headers['content-type']}       application/json
+
+Create a new pet with only few important fields by api
+    ${status}=      Send post Request   ${add_pet_url}      ${newt_xx}
+    Should be equal as Integers      ${status.status_code}   200    ${status.text}
+    Should be equal as Strings       ${status.json()['name']}      ${newt_xx.name}
+    Should be equal as Strings       ${status.headers['content-type']}       application/json
+
 Find a pet by id by api
     ${status}=      Send get request        ${find_a_pet_by_id_url}     ${EMPTY}
     Should be equal as Integers      ${status.status_code}   200    ${status.text}
@@ -48,5 +60,5 @@ Delete a pet by id by api
 
 Check a pet has been deleted by api
     ${status}=      Send get request       ${find_a_pet_by_id_url}     ${EMPTY}
-    Should be equal as Integers      ${status.status_code}   200    ${status.text}
+    Should be equal as Integers      ${status.status_code}   404    ${status.text}
     log many    ${status.text}
