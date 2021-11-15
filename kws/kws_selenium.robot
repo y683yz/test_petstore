@@ -24,3 +24,7 @@ Create a new pet by selenium
     Sleep   1 s
     ${responseCode}=        get element text    ${driver}       ${ADDPET_OPERATION_RESPONSE_CODE}
     Should contain     ${responseCode}     200
+    ${responseBody}=        get element text    ${driver}       ${ADDPET_OPERATION_RESPONSE_BODY}
+    Should contain     ${responseBody}     newt
+    ${responseHeaders}=        get element text    ${driver}       ${ADDPET_OPERATION_RESPONSE_HEADERS}
+    Should contain     ${responseHeaders}     application/json
