@@ -1,10 +1,10 @@
 # Test_petstore
 This project will set up a test framework to test the pet store UI and APIs.
 # Test framework
-For the simplicity, the test framework is just based on python (requests), selenium, and robot-framework.  
+For the simplicity, the test framework is just based on python/requests, selenium, and robot-framework.  
 - Selenium: UI testing
 - Python/requests: API calls
-- Robot-framework: assertion, test run and reporting
+- Robot-framework: assertion, test run, trace/debug and reporting
 
 There are many options and high level libraries can be used. For this task these are enough.
 # Data structure
@@ -16,9 +16,10 @@ There are many options and high level libraries can be used. For this task these
 - tests: define test suite
 
 # Test run
-- Setup environment: python + robot-framework with the newest versions. Refer to the python requirements.txt file in the root
+- Setup environment: python, selenium, robot-framework with the newest versions. Refer to the python requirements.txt file in the root, also chrome and chromedriver should be installed.
 - Run the tests from terminal:
-- [Syntax], start from root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode to [default] to launch the browser:
->- robot -L DEBUG -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
+## Syntax 
+Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode to [default] to launch the browser:
+>- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
 # Test report
-- Test report is a normal robot report, say report.html in the root, with DEBUG log level.
+- Test report is a normal robot report, say report.html in the root, with TRACE/DEBUG/INFO log level.
