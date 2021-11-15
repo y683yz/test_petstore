@@ -13,7 +13,9 @@ Test preparation
     ${driver}=                      Run keyword             Open ${mode} Chrome
     Set Global Variable             ${driver}
 
+
 #----- add pet ------------
+
 Create a new pet by selenium
     To This Page            ${driver}       ${BASE_URL}
     click this button       ${driver}       ${ADDPET_OPERATION_BUTTON}
