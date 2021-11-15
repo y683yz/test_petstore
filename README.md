@@ -22,4 +22,3 @@ There are a lot options and high level libraries can be used. For this task thes
 >- robot -L DEBUG -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
 # Test report
 - Test report is a normal robot report, say report.html in the root, with DEBUG log level.
--
