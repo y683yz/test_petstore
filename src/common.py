@@ -1,16 +1,9 @@
-import string
-import sys
-import  json
-import  time
+import json
+import time
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from robot.api import logger
 from robot.api.deco import keyword
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 
 class common(object):
     """
@@ -107,8 +100,6 @@ class common(object):
         return driver
 
     @keyword
-
-    @keyword
     def click_this_button(self, driver, selector):
         """
          Click the btn: which is defined by a css_selector
@@ -150,11 +141,8 @@ class common(object):
         """
         element = driver.find_element_by_css_selector(selector)
         element.clear()
-        #text=text + '\n'
         element.send_keys(text)
         time.sleep(1)
-        ##element.submit()
-        #driver.find_element_by_css_selector(selector).send_keys(Keys.ENTER)
 
     @keyword
     def get_element_text(self, driver, selector):

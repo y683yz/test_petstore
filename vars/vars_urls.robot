@@ -1,6 +1,6 @@
 *** Variables ***
 #################################################################
-# All selector variables are defined here for urls.
+# All selector variables are defined here for used urls.
 #################################################################
 # baseurl defined in cmd-line
 ${BASE_URL}          ${baseurl}
@@ -13,4 +13,5 @@ ${user_logout_url}        ${BASE_URL}/v2/user/logout
 ${user_login_url}         ${BASE_URL}/v2/user/login
 ${add_pet_url}            ${BASE_URL}/v2/pet
 ${find_a_pet_by_id_url}     ${BASE_URL}/v2/pet/${newt.id}
+${find_a_pet_by_xid_url}     ${BASE_URL}/v2/pet/888
 #${delete_a_pet_by_id_url}     ${BASE_URL}/v2/pet/${newt.id}
