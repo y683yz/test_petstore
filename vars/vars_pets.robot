@@ -11,6 +11,8 @@
 &{newt}     id=1100    category=&{category}    name=newt   photoUrls=@{photoUrls}  tags=@{tags}     status=available
 &{newt_x}     id=1199    category=&{category}    name=newt_x     tags=@{tags}     status=available
 &{newt_xx}     id=2299    name=newt_xx     status=available
+&{newt_name_only}     name=newt_xxx
+&{newt_id_only}     id=1234567
 
 &{petid}    id=${newt.id}
 

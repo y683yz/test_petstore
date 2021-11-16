@@ -13,31 +13,34 @@ Create account
     create a user by api
 
 Find account by username
-    Wait Until Keyword Succeeds     10 x    1 s   find a user by username by api
+    wait Until Keyword Succeeds     10 x    1 s   find a user by username by api
 
 Create a pet by API
     create a new pet by api
     Create a new pet with missing photoUrls field by api
-    Create a new pet with only few important fields by api
+    Create a new pet only with few important fields by api
+    Create a new pet only with name by api
+    Create a new pet only with id by api
 
 Create a pet by Selenium
     create a new pet by selenium
 
 Find a pet by ID
-    Wait Until Keyword Succeeds     10 x    1 s   find a pet by id by api
+    wait Until Keyword Succeeds     10 x    1 s   find a pet by id by api
+    wait Until Keyword Succeeds     10 x    1 s   find a pet by id but missing name by api
 
 Delete a pet by ID
-    Wait Until Keyword Succeeds     10 x    1 s   delete a pet by id by api
+    wait Until Keyword Succeeds     10 x    1 s   delete a pet by id by api
 
 Check pet has been deleted
-    Wait Until Keyword Succeeds     10 x    1 s   Check a pet has been deleted by api
+    wait Until Keyword Succeeds     10 x    1 s   Check a pet has been deleted by api
 
 Logout petstore
-    Logout petstore by api
+    logout petstore by api
 
 Login perstore
     log in petstore by api
-    Wait Until Keyword Succeeds     10 x    1 s   find a user by username by api
+    wait Until Keyword Succeeds     10 x    1 s   find a user by username by api
 
 Try to find an unexisted pet
-    Find a pet by unexisted id by api
+    find a pet by unexisted id by api
