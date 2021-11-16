@@ -6,7 +6,8 @@ For the simplicity, the test framework is just based on python/requests, seleniu
 - Python/requests: API calls
 - Robot-framework: assertion, test run, trace/debug and reporting
 
-There are many options and high level libraries can be used. For this task these are enough.
+There are many options and high level libraries can be used definitely. For this task, this setup is enough.
+
 # Data structure
 ## Project: test_petstore
 - vars: define variables for POM selectors, URLs, user data and pets
@@ -21,5 +22,6 @@ There are many options and high level libraries can be used. For this task these
 ## Syntax 
 Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode from [headless] to [default] to launch the browser:
 >- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
+
 # Test report
 - Test report is a normal robot report, say report.html in the root, with TRACE/DEBUG/INFO log level.
