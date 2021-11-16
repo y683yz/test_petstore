@@ -1,3 +1,6 @@
+'''
+Test library to define methods for browser navigation and API calls
+'''
 import json
 import time
 import requests
@@ -7,9 +10,6 @@ from selenium.webdriver.common.keys import Keys
 
 
 class Common(object):
-    """
-    Test library
-    """
     HEADERS = {'Content-Type':'application/json'}
 
     def __init__(self):

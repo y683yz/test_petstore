@@ -1,4 +1,6 @@
 *** Keywords ***
+# Keywords for API tests
+
 create a user by api
     ${status}=      Send post request        ${create_user_url}     ${user_1}
     Should be equal as Integers      ${status.status_code}   200    ${status.text}
