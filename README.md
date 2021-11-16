@@ -17,9 +17,10 @@ There are many options and high level libraries can be used definitely. For this
 - tests: define test suite
 
 # Test run
-- Setup environment: python, selenium, robot-framework with the newest versions. Refer to the python requirements.txt file in the root, also chrome and chromedriver should be installed.
-- Run the tests from terminal:
-## Syntax 
+**Setup environment**: python, selenium, robot-framework with the newest versions. Refer to the python requirements.txt file in the root, also chrome and chromedriver should be installed.
+
+**Run the tests from terminal**:
+
 Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode from [headless] to [default] to launch the browser:
 
 Run with Chrome headless:
