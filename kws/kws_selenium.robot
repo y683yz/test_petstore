@@ -1,4 +1,6 @@
 *** Keywords ***
+#   Keywords for test setup and teardown for test with selenium
+
 #--- setup and teardown------------
 Suite preparation
     ${driver}=                      Run keyword             Open ${mode} Chrome
