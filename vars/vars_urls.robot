@@ -13,5 +13,6 @@ ${user_logout_url}        ${BASE_URL}/v2/user/logout
 ${user_login_url}         ${BASE_URL}/v2/user/login
 ${add_pet_url}            ${BASE_URL}/v2/pet
 ${find_a_pet_by_id_url}     ${BASE_URL}/v2/pet/${newt.id}
-${find_a_pet_by_xid_url}     ${BASE_URL}/v2/pet/888
+${find_a_pet_by_xid_url}     ${BASE_URL}/v2/pet/10888
+${find_a_pet_by_id_missing_name_url}     ${BASE_URL}/v2/pet/6054323
 #${delete_a_pet_by_id_url}     ${BASE_URL}/v2/pet/${newt.id}
