@@ -24,6 +24,7 @@ Start from the root, the arguments are following robot cmd rules. e.g. you can r
 
 Run with Chrome headless:
 >- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
+
 Run with Chrome browser:
 >- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:default ./tests/tests.robot
 >
