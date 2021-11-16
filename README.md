@@ -21,7 +21,11 @@ There are many options and high level libraries can be used definitely. For this
 - Run the tests from terminal:
 ## Syntax 
 Start from the root, the arguments are following robot cmd rules. e.g. you can replace new baseurl from cmd line, and change mode from [headless] to [default] to launch the browser:
->- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
 
+Run with Chrome headless:
+>- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
+Run with Chrome browser:
+>- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:default ./tests/tests.robot
+>
 # Test report
 - Test report is generated as the standard robot test report, say, report.html in the root, with TRACE/DEBUG/INFO log level.
