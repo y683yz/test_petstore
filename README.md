@@ -24,4 +24,4 @@ Start from the root, the arguments are following robot cmd rules. e.g. you can r
 >- robot -L TRACE -v baseurl:https://petstore.swagger.io -v mode:headless ./tests/tests.robot
 
 # Test report
-- Test report is a normal robot report, say report.html in the root, with TRACE/DEBUG/INFO log level.
+- Test report is generated as the standard robot test report, say, report.html in the root, with TRACE/DEBUG/INFO log level.
