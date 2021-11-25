@@ -8,4 +8,4 @@ Resource        ${CURDIR}/../kws/kws_API.robot
 Resource        ${CURDIR}/../kws/kws_selenium.robot
 
 Library         ${CURDIR}/../src/Common.py
-Library         SeleniumLibrary     timeout=10  implicit_wait=0.5
+
